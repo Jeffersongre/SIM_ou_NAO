@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: url("FOTO_VINHO.png") no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CARD CENTRAL */
+.container {
+    width: 90%;
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.25);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(12px);
+    text-align: center;
+}
+
+.titulo {
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.sub {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    color: #f8f8f8;
+}
+
+.strike {
+    text-decoration: line-through;
+    color: #ffeeee;
+}
+
+.overwrite {
+    color: #ff2a2a;
+    font-weight: 700;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+}
+
+.btn {
+    border: none;
+    padding: 14px 35px;
+    font-size: 1.1rem;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.25s;
+    font-weight: 600;
+}
+
+/* BOTÃO SIM */
+.yes {
+    background: #28a745;
+    color: #fff;
+}
+
+.yes:hover {
+    background: #1e7e34;
+    transform: scale(1.08);
+}
+
+/* BOTÃO NÃO (FUGINDO) */
+.no {
+    position: absolute;
+    background: #d11;
+    color: #fff;
+    transition: 0.2s;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 480px) {
+
+    .titulo {
+        font-size: 1.4rem;
+    }
+
+    .btn {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+
+    .container {
+        padding: 20px;
+    }
+}
