@@ -49,40 +49,34 @@ body {
 }
 
 .buttons {
+    position: relative;
+    height: 80px; /* garante espaço suficiente */
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 20px;
-    position: relative;
 }
 
-.btn {
-    border: none;
+/* SIM normal */
+.yes {
+    position: relative;
+    z-index: 2;
+}
+
+
+.no {
+    position: absolute;
+    left: 180px;   
+    top: 0px;     
+    background: #d11;
+    color: #fff;
     padding: 14px 35px;
-    font-size: 1.1rem;
     border-radius: 12px;
     cursor: pointer;
-    transition: 0.25s;
+    transition: 0.2s;
     font-weight: 600;
 }
 
-/* BOTÃO SIM */
-.yes {
-    background: #28a745;
-    color: #fff;
-}
-
-.yes:hover {
-    background: #1e7e34;
-    transform: scale(1.08);
-}
-
-/* BOTÃO NÃO (FUGINDO) */
-.no {
-    position: absolute;
-    background: #d11;
-    color: #fff;
-    transition: 0.2s;
-}
 
 /* RESPONSIVIDADE */
 @media (max-width: 480px) {
